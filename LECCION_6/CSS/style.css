@@ -1,0 +1,90 @@
+/* medidas obligatorias */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    width: 100%;
+    /* la medida vh sirve para la altura del dispositivo en el cual se esta viendo */
+    height: 100vh;
+    background-image: url(../IMG/backgroundHeader.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    /* primera medidad arriba y abajo, segunda derecha izquierda, tercera abajo y cuarta medida arriba; El orden va como las manecillas del reloj */
+    padding: 30px 80px;
+    justify-content: space-between;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+/* font-size para el tamano de los iconos */
+header nav .logo i{
+    font-size: 60px;
+    color: #e2c15c;
+}
+header nav .logo span{
+    font-weight: 500;
+    color: #fff;
+}
+header nav #nave1{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-weight: 500;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav #nave2{
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    width: 18%;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav #contact{
+    display: flex;
+    width: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav #contact i{
+    font-size: 22px;
+}
+header .hero{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 140px 100px 500px 130px;
+    gap: 60px;
+}
+header .hero h1{
+    font-weight: bolder;
+    font-size: 45px;
+    color: #e2c15c;
+}
+header .hero p{
+    width: 59%;
+    font-weight: 400;
+    font-size: 13.5px;
+    color: #fffcfb;
+}
+header .hero a{
+    color: #0f0f0f;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 11px 70px;
+    background-color: #e2c15c;
+    border-radius: 25px;
+    width: fit-content;
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: fit-content;
+    width: 100%;
+    background:
+        url(../IMG/persona.png),
+        radial-gradient(
+            ellipse at 55% 45%,
+            rgba(29, 78, 82, 0.65) 0%,
+            rgba(19, 48, 55, 0.45) 35%,
+            transparent 70%
+        ),
+        linear-gradient(
+            110deg,
+            #14252f 0%,
+            #102b35 50%,
+            #14232c 100%
+        );
+    background-repeat: no-repeat;
+    background-position: bottom, center, center;
+    background-size: 80%, contain, contain;
+}
+header nav{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+header nav span{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #fff;
+    width: 14%;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    width: 45%;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+    padding: 16px 50px;
+    font-size: 14px;
+    color: #fff;
+}
+.CTA{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 1px 7px 8px;
+    border-radius: 30px;
+    background-color: #C5A654;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #fff;
+}
+header nav .CTA a i{
+    font-size: 40px;
+    color: #fff;
+}
+header #hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+header #hero #pt1 #t1 i{
+    color: #C5A654;
+}
+header #hero #pt1 #t1{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 20px;
+    color: #fff;
+    font-size: 14px;
+    gap: 10px;
+}
+header #hero #pt1{
+    width: 26%;
+    height: fit-content;
+}
+header #hero #pt1 h1{
+    font-size: 74px;
+    color: #fff;
+    font-weight: bolder;
+}
+header #hero #pt1 h1 span{
+    color: #C5A654;
+}
+header #hero div #card1{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+    width: 280px;
+    padding: 6px 20px;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+header #hero div #card1 #sta{
+    display: flex;
+}
+header #hero div #card1 #gooface{
+    display: flex;
+    gap: -10px;
+}

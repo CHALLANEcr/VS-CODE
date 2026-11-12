@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    padding: 0px 50px;
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav #logo img{
+    width: 250px;
+    height: 100px;
+}
+nav ul{
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: bolder;
+    align-items: center;
+}
+.cta{
+    font-weight: bolder;
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffde21;
+    padding: 18px 30px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: black;
+}
+.cta2{
+    font-weight: bolder;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    padding: 18px 30px;
+    border-radius: 14px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 82vh;
+    background-image: url(../IMG/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 30px 0 30px;
+}
+header #titulos{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 40px;
+    gap: 30px;
+}
+header #titulos h1{
+    font-size: 65px;
+}
+header #titulos h1 span{
+    color: #ffde21;
+}
+header #titulos #parra{
+    font-size: 26px;
+    font-weight: 600;
+}
+header #titulos #bottoms{
+    display: flex;
+    gap: 25px;
+}
+header #titulos #iconos{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 8px;
+    gap: 15px;
+    border-radius: 0.625rem;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.83) 49.52%, rgba(255, 255, 255, 0.01) 100%);
+}
+header #Abar{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(21, 20, 20);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+header #Abar p{
+    font-size: 80px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.073);
+}
+header #Abar div{
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+header #Abar div span{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+header #Abar div i{
+    color: #ffde21;
+    font-size: 35px;
+}

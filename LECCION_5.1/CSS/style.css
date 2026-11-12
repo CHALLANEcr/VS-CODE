@@ -1,0 +1,128 @@
+header{
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+}
+section{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+}
+section #azules{
+    width: 20%;
+    height: 1000px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+section #azules #search{
+    width: 100%;
+    height: 30%;
+    background-color: cornflowerblue;
+}
+section #azules #social{
+    width: 100%;
+    height: 30%;
+    background-color: deepskyblue;
+}
+section #azules #news{
+    width: 100%;
+    height: 40%;
+    background-color: skyblue;
+}
+section #naranjas{
+    width: 60%;
+    height: 1000px;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+}
+section #naranjas #banner{
+    width: 100%;
+    height: 200px;
+    background-color: orangered;
+}
+section #naranjas #copy{
+    width: 100%;
+    height: 150px;
+    background-color: coral;
+}
+section #naranjas #products{
+    width: 100%;
+    height: 200px;
+    background-color: hotpink;
+}
+section #naranjas #copy2{
+    width: 100%;
+    height: 150px;
+    background-color: coral;
+}
+section #naranjas #blog{
+    width: 100%;
+    height: 300px;
+    background-color: indianred;
+}
+section #amarillos{
+    width: 20%;
+    height: 1000px;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+}
+section #amarillos #content{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(61, 55, 47);
+    display: flex;
+}
+section #amarillos #content #categories{
+    width: 50%;
+    height: 650px;
+    background-color: rgb(182, 32, 185);
+}
+section #amarillos #content #categories #cat{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(240, 210, 14);
+}
+section #amarillos #content #categories #cat2{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(199, 178, 43);
+}
+section #amarillos #content #categories #cat3{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(240, 210, 14);
+}
+section #amarillos #content #categories #cat4{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(199, 178, 43);
+}
+section #amarillos #content #categories #cat5{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(240, 210, 14);
+}
+section #amarillos #content #sidenav{
+    width: 50%;
+    height: 650px;
+    background-color: darkorange;
+}
+section #amarillos #other{
+    width: 100%;
+    height: 450px;
+    background-color: goldenrod;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: darkcyan;
+}

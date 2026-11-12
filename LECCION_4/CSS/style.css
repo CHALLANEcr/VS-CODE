@@ -1,0 +1,82 @@
+/* Selector univerasal: agrega caracteristicas a todas las etiquetas por igual */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+/* Selector de etiquetas para agregar propiedades esteticas */
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #505050;
+}
+header{
+    width: 80%;
+    height: 800px;
+    background-color: #b61919;
+    /* la primera medidad es del tamaño que hay arriba y abajo: la Segunda es izquierda y derecha */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header #text_content{
+    width: 50%;
+    height: 600px;
+    background-color: #ffff82;
+}
+header #img_content{
+    width: 50%;
+    height: 600px;
+    background-color: black;
+    
+}
+main{
+    background-color: bisque;
+    padding: 0%    100px;
+}
+main section{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+}
+
+main #sobre_nosotros{
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+}
+main #sobre_nosotros #art1{
+    width: 20%;
+    height: 500px;
+    background-color: cadetblue;
+}
+main #sobre_nosotros #art2{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(80, 153, 255);
+}
+main #sobre_nosotros #art3{
+    width: 20%;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+main #productos{
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+}
+main #productos #cle1{
+    width: auto;
+    height: 50%;
+    background-color: darkgreen;
+}
+main #productos #cle2{
+    width: auto;
+    height: 50%;
+    background-color: rgb(70, 226, 43);
+}

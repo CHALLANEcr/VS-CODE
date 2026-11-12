@@ -1,0 +1,294 @@
+<!-- la etiqueta DOCTYPE sirve para definirle al navegador que se va a usar HTML 5 -->
+<!DOCTYPE html>
+<!-- lang: las etiquetas tienen atributos que cambian comportamientos y en: lo que esta entre las comillas en una propiedad que es el cambio en si. Define le idoma del sitio -->
+<html lang="en,es">
+<!-- head: Define servicios de terceros necesarios para el correcto funcionamiento del sitio web -->
+<head>
+    <!-- la etique meta tiene varios atrubutos -->
+    <!-- charset UTF-8 Permite poner caracteres especiales como la tilde y la ñ -->
+    <meta charset="UTF-8">
+    <!-- name: se utiliza para dar una base para dar comportamiento responisvo del sitio web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title: define el texto que se muestra en la pestaña del navegador, NO debe ser mayor a 60 caracteres -->
+    <title>primera prueba de sitio web</title>
+</head>
+<!-- body: solo lo que esta dentro de esa etiqueata se pude ver -->
+<body>
+    <!-- Etiquetas de texto y contenido -->
+    <!-- Titulos y subtitulos -->
+    <!-- todo archivo de html maximo debe tener un h1 en el hero -->
+    <!-- cada section tiene que tener un titulo y ese titulo tiene que ser un h2 -->
+    <h1>Titulo para el contenido</h1>
+    <h2>Titulo para el contenido</h2>
+    <h3>Titulo para el contenido</h3>
+    <h4>Titulo para el contenido</h4>
+    <h5>Titulo para el contenido</h5>
+    <h6>Titulo para el contenido</h6>
+    <!-- Parrafos -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sint sequi a necessitatibus hic <b>praesentium</b>  error pariatur tempora veniam est at ipsam, eum, unde maxime et aut veritatis. Illo aperiam pariatur veniam a nam quos quaerat ut fugiat sit debitis!</p>
+    <!-- Textos con estetica -->
+    <!-- Negrita -->
+    <strong>
+        Texto negrita con strong
+    </strong>
+    <b>
+        Texto negria con b
+    </b>
+    <!-- Salto de linea -->
+    <br>
+    <!-- Texto cursiva / italica -->
+    <i>
+        Texto con italica
+    </i>
+    <br>
+    <!-- Textos subrayado -->
+    <u>
+        Texto subrayado
+    </u>
+    <!-- Recursos y colecciones -->
+    <!-- Listas de viñetas -->
+    <ul type="square">
+        <li>Gato</li>
+        <li>Perro</li>
+        <li>Pez</li>
+        <li>Conejo</li>
+    </ul>
+    <ul>
+        <li type="circle">Saprissa</li>
+        <li type="disc">Heredia</li>
+        <li>Real Madrid</li>
+        <li>Manchester City</li>
+        <li>Liverpool</li>
+    </ul>
+    <!-- Listas enumeradas -->
+    <!-- Vairantes: type a,A,i,I. Las a son para orden alfabetico y las i es para numeros romanos-->
+    <ol type="I">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <ol>
+        <li>Conceptos</li>
+        <li>Disenos</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <br>
+    <ol>
+        <li>Conceptos
+            <ul type="circle">
+                <li>Sitio web</li>
+                <li>Hostig</li>
+                <li>Concepto de diseño</li>
+            </ul>
+        </li>
+        <li>Diseño
+            <ol type="i">
+                <li>Figma</li>
+                <li>Frame</li>
+                <li>Aout Layout
+                    <ol type="a">
+                        <li>Fill</li>
+                        <li>Hug</li>
+                        <li>Width</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <br>
+    <!-- Hipervinculos o anclas -->
+    <a href="https://www.youtube.com/live/yBGFbiX7pns?si=c8KSOOjH1P3mbiYH" target="_blank">mamawevo</a>
+    <br>
+    <!-- imagenes -->
+    <img src="IMG/imgg.jpg" alt="" width="400">
+    <!-- imagen con hipervinculo -->
+    <a href="https://www.youtube.com/live/yBGFbiX7pns?si=c8KSOOjH1P3mbiYH" target="_blank">
+        <img src="IMG/imgg.jpg" alt="" width="300">
+    </a>
+    <br><br><br><br><br>
+    <!-- Tablas Basicas -->
+    <table border="1">
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Edad
+            </th>
+            <th>
+                Correo
+            </th>
+            <th>
+                x2
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Celda 1
+            </td>
+            <td>
+                Celda 2
+            </td>
+            <td>
+                Celda 3
+            </td>
+            <td>
+                Celda 4
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Celda 5
+            </td>
+            <td>
+                Celda 6
+            </td>
+            <td>
+                Celda 7
+            </td>
+            <td>
+                Celda 8
+            </td>
+        </tr>
+        
+    </table>
+    <br><br><br><br><br>
+    <!-- Tablas semanticas -->
+    <table border="1">
+        <caption>Lista de usuarios
+        </caption>
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>Edad
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Juana
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Juan
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br>
+    <!-- Tablas con celdas combinadas -->
+    <!-- rowspan para combinar filas en vertical y colspan para columnas en horizontal -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Your Full Name
+                </th>
+                <th>
+                    Course Codes
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    My First Name Is
+                    <br>
+                    <br>
+                    <strong>Mohammad</strong>
+                    <br>
+                    <br>
+                </td>
+                <td>IT 242</td>
+                <td rowspan="2">Confirmed</td>
+            </tr>
+            <tr>
+                <td>IT 445</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    My Second Name Is
+                    <br>
+                    <br>
+                    <strong>Ali</strong>
+                    <br>
+                    <br>
+                </td>
+                <td rowspan="2">
+                    My Family Name Is
+                    <br>
+                    <br>
+                    <strong>Al Shehri</strong>
+                    <br>
+                    <br>
+                </td>
+                <td>IT 241</td>
+                <td rowspan="2">In Progress</td>
+            </tr>
+            <tr>
+                <td>TI 230</td>
+            </tr>
+            <tr>
+                <td colspan="4" rowspan="2" align="center">The end <progress></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Header
+                </th>
+                <th>
+                    Header
+                </th>
+                <th>
+                    Header
+                </th>
+                <th>
+                    Header
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5" align="center">x1</td>
+                <td colspan="3" align="center">x2</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">c2</td>
+                <td rowspan="4" align="center">c4</td>
+            </tr>
+            <tr>
+                <td rowspan="3" align="center">v2</td>
+                <td align="center">v3</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center"> b3 <br><br></td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br>
+</body>
+</html>

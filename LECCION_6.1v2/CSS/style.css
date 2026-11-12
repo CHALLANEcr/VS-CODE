@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background:
+        url(../IMG/persona.png),
+        radial-gradient(
+            ellipse at 55% 45%,
+            rgba(29, 78, 82, 0.65) 0%,
+            rgba(19, 48, 55, 0.45) 35%,
+            transparent 70%
+        ),
+        linear-gradient(
+            110deg,
+            #14252f 0%,
+            #102b35 50%,
+            #14232c 100%
+        );
+    background-repeat: no-repeat;
+    background-position: bottom, center, center;
+    background-size: 80%, contain, contain;
+    padding: 0px 60px;
+    border-radius: 0 0 50px 50px;
+}
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding: 4px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav span{
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+header nav ul{
+    width: 45%;
+    height: fit-content;
+    padding: 18px 40px;
+    border-radius: 30px;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    gap: 10px;
+    color: #fff;
+}
+.cta{
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #C5A654;
+    padding: 10px  0px 10px 16px;
+    border-radius: 35px;
+    align-items: center;
+}
+.cta i{
+    font-size: 40px;
+}
+header #headCont{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+header #headCont #colmIZ{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header #headCont #colmIZ #textoIZ{
+    display: flex;
+    flex-direction: column;
+}
+header #headCont #colmIZ #textoIZ #pestana{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 4px 10px;
+    gap: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+header #headCont #colmIZ #textoIZ #pestana i{
+    color: #C5A654;
+}
+header #headCont #colmIZ #textoIZ h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+header #headCont #colmIZ #textoIZ h1 span{
+    color: #C5A654;
+}
+header #headCont #colmDE{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+header #headCont #colmDE #textoDE{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 20px;
+}
+header #headCont #colmDE #textoDE #pestana2{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 4px 10px;
+    gap: 15px;
+    color: #fff;
+}
+header #headCont #colmDE #textoDE #iconos{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+header #headCont #colmDE #textoDE #iconos #gooface{
+    display: flex;
+    gap: -30px;
+    font-size: 34px;
+}
+header #headCont #colmDE #textoDE #icons #stax{
+    display: flex;
+    font-weight: bolder;
+    width: 100%;
+    height: fit-content;
+}
+header #headCont #colmDE #textoDE #iconos #stax #stars{
+    display: flex;
+}
+.bbar{
+    font-size: 15px;
+    width: fit-content;
+    height: auto;
+}
+.icon{
+    font-size: 35px;
+    font-weight: bolder;
+}
+header #simbols{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    backdrop-filter: blur(10px);
+    padding: 4px 10px;
+    gap: 15px;
+    color: #fff;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.70);
+    align-items: center;
+}
+main{
+    padding: 100px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+main #h2t{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main #h2t span{
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 10px;
+    border-radius: 16px;
+    border: 1px solid black ;
+}
+main #h2t h2{
+    font-size: 45px;
+}
+main #texcont{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+main #texcont #t1{
+    font-weight: 700;
+    color: rgba(56, 56, 56, 0.871);
+}
+main #texcont #t2{
+    font-weight: 700;
+    color: rgba(107, 105, 105, 0.8);
+}
