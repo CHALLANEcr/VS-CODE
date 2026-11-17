@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#inicio{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Nav estilo */
+#inicio #navegacion{
+    display: flex;
+    padding: 20px 42px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: #F4F6F5;
+}
+.logo{
+    display: flex;
+    width: 111px;
+    height: 111px;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 111px;
+}
+/* barra de navegacion */
+#inicio #navegacion nav{
+    display: flex;
+    width: 1000px;
+    padding: 35px 79px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.30);
+}
+/* estilo de las opciones del menu */
+.op_menu{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+#inicio #navegacion a i{
+    font-size: 70px;
+    color: #1D3A29;
+}
+#inicio #headercontent{
+    display: flex;
+    padding: 120px 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    align-self: stretch;
+    background: url(../IMG/HERO_BANNER_OPT.jpg) lightgray 50% / cover no-repeat;
+}
+#inicio #headercontent #box_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 40px;
+    background: rgba(244, 246, 245, 0.20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+}
+#inicio #headercontent #box_content h1{
+    color: #214E34;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    padding: 80px 100px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+/* ctas del hero */
+#inicio #headercontent #ctas{
+    display: flex;
+    padding: 10px 210px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    align-self: stretch;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.cta_naranja{
+    display: flex;
+    height: fit-content;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FF5E00;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cta_gris{
+    display: flex;
+    height: fit-content;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(244, 246, 245, 0.20);
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-top: 1px solid rgba(255, 255, 255, 0.56);
+}
+/* cards hero */
+#inicio #headercontent #cards1{
+    display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+.card1{
+    display: flex;
+    min-width: 200px;
+    min-height: 140px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: rgba(33, 78, 52, 0.439);
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 1px solid rgba(255, 255, 255, 0.56);
+}
+.titulos_cards1{
+    color: #469064;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main{
+    width: 100%;
+    height: fit-content;
+}
+.green{
+    color: #214E34;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+}
+.white{
+    color: #ffffff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+}
+/* section evento */
+main #evento{
+    display: flex;
+    width: 100%;
+    padding: 50px 240px;
+    flex-direction: column;
+    align-items: center;
+    gap: 73px;
+}
+main #evento #tarjetas{
+    display: flex;
+    min-width: 700px;
+    padding: 0 15px;
+    align-items: center;
+    align-content: center;
+    gap: 54px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+/* cards evento */
+main #evento #tarjetas #cards_evento{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    flex: 1 0 0;
+}
+/* estilo de las cards en la section evento */
+main #evento #tarjetas #cards_evento #carde1{
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    border-left: 5px solid #214E34;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+main #evento #tarjetas #cards_evento #carde2{
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    border-left: 5px solid #467C5D;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+main #evento #tarjetas #cards_evento #carde3{
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    border-left: 5px solid #7AAE90;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+/* caracteristicas de las cards-evento */
+main #evento #tarjetas #cards_evento article div{
+    display: flex;
+    padding: 1px 0;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+main #evento #tarjetas #cards_evento article div i{
+    color: #FF5E00;
+    font-size: 24px;
+}
+main #evento #tarjetas #cards_evento article div h3{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main #evento #tarjetas #cards_evento article p{
+    color: #626262;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* card inscripcion */
+main #evento #tarjetas #card_inscripcion{
+    display: flex;
+    width: 50%;
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: conic-gradient(from 89deg at 50% 108.04%, #214E34 0deg, #214E34 0.4010826162993908deg, #000 201.28461599349976deg, #214E34 360deg);
+    box-shadow: 7px 9px 9.9px 2px rgba(0, 0, 0, 0.25);
+}
+main #evento #tarjetas #card_inscripcion h3{
+    align-self: stretch;
+    color: #12B757;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main #evento #tarjetas #card_inscripcion ul{
+    list-style-type: "";
+    gap: 25px;
+    padding: 0 0 0 30px;
+}
+main #evento #tarjetas #card_inscripcion ul li{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
