@@ -6,13 +6,14 @@
 #inicio{
     display: flex;
     width: 100%;
+    min-height: 100vh;
     flex-direction: column;
     align-items: flex-start;
 }
 /* Nav estilo */
 #inicio #navegacion{
     display: flex;
-    padding: 20px 42px;
+    padding: 10px 42px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -31,11 +32,10 @@
 /* barra de navegacion */
 #inicio #navegacion nav{
     display: flex;
-    width: 1000px;
     padding: 35px 79px;
-    justify-content: space-between;
+    gap: 25px;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 30px;
     background: rgba(0, 0, 0, 0.30);
 }
 /* estilo de las opciones del menu */
@@ -49,10 +49,12 @@
     text-decoration: none;
 }
 #inicio #navegacion a i{
-    font-size: 70px;
+    font-size: 60px;
     color: #1D3A29;
 }
 #inicio #headercontent{
+    width: 100%;
+    height: fit-content;
     display: flex;
     padding: 120px 240px;
     flex-direction: column;
@@ -183,6 +185,7 @@ main{
     font-weight: 700;
     line-height: normal;
     align-self: stretch;
+    width: 100%;
 }
 .white{
     color: #ffffff;
@@ -193,9 +196,17 @@ main{
     font-weight: 700;
     line-height: normal;
     align-self: stretch;
+    width: 100%;
+}
+main{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 /* section evento */
 main #evento{
+
     display: flex;
     width: 100%;
     padding: 50px 240px;
@@ -513,7 +524,7 @@ main #etapas #cards_etapas{
 /* estilo de section los santos */
 main #los_santos{
     display: flex;
-    width: 1920px;
+    width: 100%;
     padding: 50px 240px;
     align-items: center;
     gap: 10px;
@@ -524,6 +535,7 @@ main #los_santos div{
     display: flex;
     width: 100%;
     gap: 140px;
+    align-items: center;
 }
 .card_los_santos{
     display: flex;

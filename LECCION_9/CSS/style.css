@@ -8,15 +8,158 @@
     outline: none;
     border: 0;
 }
+
 /* Variables de colores */
 :root{
     --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
     --border: .1rem solid rgba(255,255,255,.3);
+    --white: #fff;
+    --grey: #b7b7b7;
 }
+
 html{
     font-size: 14px;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header .navegation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .navegation .logo img{
+    height: 6rem;
+}
+
+header .navegation nav a{
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: var(--white);
+    transition: all 400ms ease-in-out;
+}
+
+/* pseudo clase le agrega un comportamiento que no viene por default (:) y pseudo elemento agrega estrecuturas que la etique no trea por default (::) */
+
+header .navegation nav a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    font-size: 1.62rem;
+}
+
+header .icons i{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    transition: all 400ms ease-in-out;
+}
+
+header .icons i:hover{
+    color: var(--main-color);
+}
+
+header .icons #menu-btn{
+    display: none;
+}
+
+header .search-form{
+    display: flex;
+    background-color: var(--white);
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+header .search-form.active{
+    transform: scaleY(1);
+}
+
+header .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+header .search-form label:hover{
+    color: var(--main-color);
+}
+
+header .header-content{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../IMG/home-img.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+header .header-content .text-content{
+    max-width: 60rem;
+    padding: 2rem 7%;
+}
+
+header .header-content .text-content h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 5.7rem;
+}
+
+header .header-content .text-content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: var(--grey);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: var(--main-color);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+.btn:hover{
+    letter-spacing: 0.2rem;
+
 }
