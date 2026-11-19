@@ -59,25 +59,25 @@
         </div>
     </header>
     <main>
-        <section id="evento">
+        <section id="la-leyenda">
             <h2 class="green">La Leyenda de Los Santos</h2>
             <div id="tarjetas">
                 <div id="cards_evento">
-                    <article id="carde1">
+                    <article id="carde1" class="card-le">
                         <div>
                             <i class="fa-solid fa-crosshairs"></i>
                             <h3>Concepto y Objetivo</h3>
                         </div>
                         <p>Promover la práctica deportiva de alto nivel mientras celebramos el patrimonio ecológico y la tradición del café de especialidad</p>
                     </article>
-                    <article id="carde2">
+                    <article id="carde2" class="card-le">
                         <div>
                             <i class="fa-solid fa-people-group"></i>
                             <h3>Público Objetivo</h3>
                         </div>
                         <p>Ciclistas de montaña élite, corredores máster, apasionados del ciclismo recreativo de larga distancia y aventureros en E-Bikes que buscan poner a prueba sus límites físicos</p>
                     </article>
-                    <article id="carde3">
+                    <article id="carde3" class="card-le">
                         <div>
                             <i class="fa-solid fa-user-check"></i>
                             <h3>Experiencia del Participante</h3>
@@ -237,25 +237,25 @@
         <section id="fanzone">
             <h2 class="white">Fanzone & Expo MTB</h2>
             <div class="cards_fanzone">
-                <article class="card_fanzone">
+                <article class="card-fanzone">
                     <i class="fa-solid fa-guitar"></i>
                     <h3>Eventos Artísticos</h3>
                     <p>Música en vivo, presentaciones culturales y ambiente familiar durante los 3 días de la competencia</p>
                 </article>
-                <article class="card_fanzone">
+                <article class="card-fanzone">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <h3>Expo MTB & Marcas</h3>
                     <p>Stands con venta de componentes, accesorios deportivos</p>
                 </article>
-                <article class="card_fanzone">
+                <article class="card-fanzone">
                     <i class="fa-solid fa-pizza-slice"></i>
                     <h3>Food Trucks & Café</h3>
                     <p>Zona gastronómica variada con barras de espresso, bebidas y alimentos</p>
                 </article>
             </div>
             <div class="patrocinadores">
-                <h3></h3>
-                <div>
+                <h3>Marcas y Aliados Institucionales</h3>
+                <div id="patro">
                     <img src="IMG/logos/scott.png" alt="">
                     <img src="IMG/logos/muni.png" alt="">
                     <img src="IMG/logos/dota.png" alt="">
@@ -266,7 +266,7 @@
             </div>
         </section>
         <section id="galeria">
-            <h2>Galería del Evento</h2>
+            <h2 class="green">Galería del Evento</h2>
             <div id="galeria_grid">
                 <figure>
                     <img src="IMG/GaleriaFT1_OPT.jpg" alt="bosque de arboles de cipres">
@@ -283,29 +283,34 @@
             </div>
         </section>
         <section id="formulario">
-            <h2>Formulario de inscripción</h2>
+            <h2 class="green">Formulario de inscripción</h2>
             <form action="#" method="post" class="formulario_inscripcion">
-                <input type="text" name="nombre" placeholder="Nombre completo" aria-label="Nombre completo" required>
-                <input type="email" name="correo" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
-                <select name="categoría" aria-label="Categorías" required>
-                    <option value="" disabled selected>Categoría</option>
-                    <option value="elite">Élite</option>
-                    <option value="master">Máster</option>
-                    <option value="recreativo">Recreativo</option>
-                    <option value="ebike">E-Bike</option>
-                </select>
-                <input type="tel" name="telefono" placeholder="Teléfono" aria-label="Teléfono" required>
+                <div class="form1">
+                    <input type="text" name="nombre" placeholder="Nombre completo" aria-label="Nombre completo" required>
+                    <input type="email" name="correo" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+                </div>
+                <div class="form2">
+                    <select name="categoría" aria-label="Categorías" required>
+                        <option value="" disabled selected>Categoría</option>
+                        <option value="elite">Élite</option>
+                        <option value="master">Máster</option>
+                        <option value="recreativo">Recreativo</option>
+                        <option value="ebike">E-Bike</option>
+                    </select>
+                    <input type="tel" name="telefono" placeholder="Teléfono" aria-label="Teléfono" required>
+                </div>
+                
                 <textarea name="mensaje" placeholder="Mensaje o Comentario (opcional)" aria-label="Mensaje o Comentario (opcional)"></textarea>
                 <button type="submit" class="boton_formulario">RESERVAR MI CUPO</button>
             </form>
         </section>
     </main>
     <footer>
-        <div>
+        <div class="theroute">
             <h2>THE ROUTE OF THE SAINTS-Desafío MTB</h2>
             <p>@ 2026 Proyecto para el curso desarrollo web. Aarón Monge</p>
         </div>
-        <div>
+        <div class="mini-nav">
             <a href="#inicio">INICIO</a>
             <a href="#evento">EVENTO</a>
             <a href="#etapas">ETAPAS</a>
