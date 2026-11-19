@@ -17,6 +17,7 @@
     --border: .1rem solid rgba(255,255,255,.3);
     --white: #fff;
     --grey: #b7b7b7;
+    --parrafo: #ccc;
 }
 
 html{
@@ -47,6 +48,7 @@ header .navegation{
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: var(--black);
 }
 
 header .navegation .logo img{
@@ -161,5 +163,103 @@ header .header-content .text-content p{
 }
 .btn:hover{
     letter-spacing: 0.2rem;
-
+}
+section{
+    padding: 2rem 7%;
+}
+/* Final Clases Generales */
+main .about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .heading{
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+main .heading span{
+    color: var(--main-color);
+}
+main .about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+main .about .row .image{
+    /* la primera medidad dice que se puede hacer tan grande como el papa, la segunda medida dice que se haga pequeña a como necesiten los hermanos y la ultima medida es para que tenga un tamaño minimo */
+    flex: 1 1 45rem;
+}
+main .about .row .image img{
+    width: 100%;
+}
+main .about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    
+}
+main .about .row .content h3{
+    font-size: 3rem;
+    color: var(--white);
+}
+main .about .row .content p{
+    font-size: 1.6rem;
+    color: var(--parrafo);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+main .menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .menu .box-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+main .menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    transition: all 500ms ease-in-out;
+}
+/* hover */
+main .menu .box-container .box:hover{
+    background-color: var(--white);
+}
+/* -----------------------------------------------------------------------
+efecti hover para afectar otros elementos y no solo afecte a la caja padre
+*/
+main .menu .box-container .box:hover > *{
+    color: var(--black) !important;
+}
+/* ----------------------------------------------------------------------- */
+/* hover */
+main .menu .box-container .box img{
+    height: 10rem;
+}
+main .menu .box-container .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    padding: .1rem 0;
+    transition: all 500ms ease-in-out;
+}
+main .menu .box-container .box .price{
+    color: var(--white);
+    font-size: 2rem;
+    padding: .5rem 0;
+    transition: all 500ms ease-in-out;
+}
+main .menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+    transition: all 500ms ease-in-out;
 }
