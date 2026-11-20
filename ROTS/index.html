@@ -13,6 +13,9 @@
 <body>
     <header id="inicio">
         <div id="navegacion">
+            <button type="button" class="hamburger" aria-label="Abrir o cerrar menú" aria-expanded="false" aria-controls="menu_nav">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
             <a href="#" class="logo">
                 <img src="IMG/logo.png" alt="Logo de montañas con árboles">
             </a>
@@ -60,6 +63,10 @@
     </header>
     <main>
         <section id="la-leyenda">
+            <i class="fa-solid fa-cloud nube"></i>
+            <i class="fa-solid fa-cloud nube2"></i>
+            <i class="fa-solid fa-cloud nube3"></i>
+            <i class="fa-solid fa-cloud nube4"></i>
             <h2 class="green title-h2">La Leyenda de Los Santos</h2>
             <div id="tarjetas">
                 <div id="cards_evento">
@@ -115,13 +122,15 @@
             <h2 class="white title-h2">Etapas del Desafío</h2>
             <div id="cards_etapas">
                 <!-- Etapa-1 Card -->
-                <article class="card_etapas">
+                <article class="card_etapas" id="cd1">
+                    <i class="fa-solid fa-bicycle bicicleta" aria-hidden="true"></i>
                     <div class="titulos_card_etapas">
                         <span id="title1">Etapa - 1 Dota</span>
                         <span class="dia_etapas">Lunes 23</span>
                     </div>
                     <h3>El Descenso Del Quetzal</h3>
                     <dl class="detalles_etapas">
+                        
                         <div class="datos_card">
                             <dt>Distancia:</dt>
                             <dd>31.6 km</dd>
@@ -146,7 +155,8 @@
                     <span id="span_etapa1">Hora de salida: 8 AM</span>
                 </article>
                 <!-- Etapa-2 Card -->
-                <article class="card_etapas">
+                <article class="card_etapas" id="cd2">
+                    <i class="fa-solid fa-mountain montana"></i>
                     <div class="titulos_card_etapas">
                         <span id="title2">Etapa - 2 Tarrazú</span>
                         <span class="dia_etapas">Martes 24</span>
@@ -177,7 +187,8 @@
                     <span id="span_etapa2">Hora de salida: 8 AM</span>
                 </article>
                 <!-- Etapa-3 Card -->
-                <article class="card_etapas">
+                <article class="card_etapas" id="cd3">
+                    <i class="fa-solid fa-person-biking persona-bici"></i>
                     <div class="titulos_card_etapas">
                         <span id="title3">Etapa - 3 León Cortés</span>
                         <span class="dia_etapas">Miércoles 25</span>
@@ -299,7 +310,7 @@
                     </select>
                     <input type="tel" name="telefono" placeholder="Teléfono" aria-label="Teléfono" required>
                 </div>
-                <textarea id="menjop" name="mensaje" placeholder="Mensaje o Comentario (opcional)" aria-label="Mensaje o Comentario (opcional)"></textarea>
+                <textarea class="texto" name="mensaje" placeholder="Mensaje o Comentario (opcional)" aria-label="Mensaje o Comentario (opcional)"></textarea>
                 <button class="cta-naranja-form" type="submit" class="boton_formulario">RESERVAR MI CUPO</button>
             </form>
         </section>
