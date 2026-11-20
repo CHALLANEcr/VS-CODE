@@ -137,7 +137,7 @@ body{
 #inicio #headercontent #box_content h1{
     color: #214E34;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 70px;
     font-style: normal;
     font-weight: 800;
@@ -228,10 +228,10 @@ body{
     gap: 10px;
     flex: 1 0 0;
     border-radius: 20px;
-    background: rgba(33, 78, 52, 0.639);
+    background: rgba(19, 47, 31, 0.606);
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -239,8 +239,8 @@ body{
     border-top: 1px solid rgba(255, 255, 255, 0.56);
 }
 .titulos_cards1{
-    color: #67987b;
-    font-family: Montserrat;
+    color: #97b9a5;
+    font-family: 'Montserrat';
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -404,7 +404,7 @@ main #la-leyenda #tarjetas #cards_evento article div i{
 }
 main #la-leyenda #tarjetas #cards_evento article div h3{
     color: #000;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -435,7 +435,7 @@ main #la-leyenda #tarjetas #card_inscripcion{
 main #la-leyenda #tarjetas #card_inscripcion h3{
     align-self: stretch;
     color: #12B757;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -846,6 +846,7 @@ main #fanzone .cards_fanzone .card-fanzone p{
     line-height: normal;
 }
 main #fanzone .patrocinadores{
+    width: 100%;
     display: flex;
     padding-top: 60px;
     flex-direction: column;
@@ -853,6 +854,7 @@ main #fanzone .patrocinadores{
     gap: 39px;
     align-self: stretch;
     border-top: 1px solid #FFF;
+    justify-content: center;
 }
 main #fanzone .patrocinadores h3{
     width: 100%;
@@ -866,9 +868,8 @@ main #fanzone .patrocinadores h3{
 }
 main #fanzone .patrocinadores #patro{
     display: flex;
-    max-width: 1440px;
     padding: 10px 30px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
     row-gap: 10px;
@@ -876,7 +877,6 @@ main #fanzone .patrocinadores #patro{
     flex-wrap: wrap;
     border-radius: 20px;
     background: rgba(181, 181, 181, 0.20);
-    justify-content: center;
 }
 main #fanzone .patrocinadores #patro img{
     width: 150px;
@@ -1162,5 +1162,8 @@ footer .mini-nav a{
 @media (max-width: 500px){
     .card_etapas{
         width: 370px;
+    }
+    #inicio #headercontent{
+        background-position: 60% center;
     }
 }
