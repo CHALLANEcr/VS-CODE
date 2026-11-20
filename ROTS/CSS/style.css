@@ -118,8 +118,9 @@ body{
     padding: 80px;
     justify-content: center;
     align-items: center;
-    background: url(../IMG/HERO_BANNER_OPT.jpg) lightgray 50% / cover no-repeat;
-    background-size: 100% 150%;
+    background: url(../IMG/BannerV3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 #inicio #headercontent #box_content{
     display: flex;
@@ -151,6 +152,7 @@ body{
 }
 /* ctas del hero */
 #inicio #headercontent #ctas{
+    padding: 20px;
     display: flex;
     max-width: 1440px;
     justify-content: center;
@@ -164,7 +166,7 @@ body{
     display: flex;
     width: fit-content;
     height: fit-content;
-    padding: 30px 20px;
+    padding: 20px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -177,6 +179,7 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: all 300ms ease-in-out;
 }
 
 .cta_naranja:hover{
@@ -185,20 +188,20 @@ body{
 .cta_gris{
     display: flex;
     height: fit-content;
-    padding: 30px 20px;
+    padding: 20px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 20px;
-    background: rgba(244, 246, 245, 0.20);
+    background: rgba(244, 246, 245, 0.50);
     text-decoration: none;
-    color: #FFF;
+    color: #ff5e00cc;
     font-family: 'Montserrat',sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border-top: 1px solid rgba(255, 255, 255, 0.56);
+    border-top: 1px solid rgba(198, 198, 198, 0.86);
     transition: all 300ms ease-in-out;
 }
 .cta_gris:hover{
@@ -225,7 +228,7 @@ body{
     gap: 10px;
     flex: 1 0 0;
     border-radius: 20px;
-    background: rgba(33, 78, 52, 0.439);
+    background: rgba(33, 78, 52, 0.639);
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-family: Inter;
@@ -236,7 +239,7 @@ body{
     border-top: 1px solid rgba(255, 255, 255, 0.56);
 }
 .titulos_cards1{
-    color: #469064;
+    color: #67987b;
     font-family: Montserrat;
     font-size: 26px;
     font-style: normal;
@@ -287,10 +290,10 @@ main #la-leyenda{
     z-index: 2;
 }
 main #la-leyenda .nube{
-    left: 167px;
-    top: 153px;
+    left: 200px;
+    top: 70px;
     color: rgba(33, 78, 52, 0.20);
-    font-size: 110px;
+    font-size: 130px;
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -300,10 +303,10 @@ main #la-leyenda .nube{
     opacity: 1;
 }
 main #la-leyenda .nube2{
-    left: 809px;
-    top: 162px;
+    left: 60px;
+    top:470px;
     color: rgba(33, 78, 52, 0.20);
-    font-size: 110px;
+    font-size: 130px;
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -313,10 +316,10 @@ main #la-leyenda .nube2{
     opacity: 1;
 }
 main #la-leyenda .nube3{
-    right: 163px;
-    top: 182px;
+    right: 40px;
+    top: 120px;
     color: rgba(33, 78, 52, 0.20);
-    font-size: 110px;
+    font-size: 130px;
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -326,10 +329,10 @@ main #la-leyenda .nube3{
     opacity: 1;
 }
 main #la-leyenda .nube4{
-    right: 163px;
-    bottom: 163px;
+    right: 350px;
+    bottom: 20px;
     color: rgba(33, 78, 52, 0.20);
-    font-size: 110px;
+    font-size: 130px;
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -863,6 +866,7 @@ main #fanzone .patrocinadores h3{
 }
 main #fanzone .patrocinadores #patro{
     display: flex;
+    max-width: 1440px;
     padding: 10px 30px;
     justify-content: space-between;
     align-items: center;
@@ -1048,6 +1052,13 @@ footer .mini-nav{
     flex: 1 0 0;
     flex-wrap: wrap;
 }
+footer .mini-nav .btn-mini{
+    color: #FFF;
+    transition: all 400ms ease-in-out;
+}
+footer .mini-nav .btn-mini:hover{
+    color: #FF5E00;
+}
 footer .mini-nav a{
     color: #FFF;
     font-family: Inter;
@@ -1062,7 +1073,7 @@ footer .mini-nav a{
     }
     #inicio #headercontent{
         padding: 40px;
-        background-size: cover;
+        background-position: 75% center;
     }
     #inicio #headercontent #box_content h1{
         font-size: 60px;

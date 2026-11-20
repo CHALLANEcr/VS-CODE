@@ -224,7 +224,7 @@ main .menu .box-container{
     align-items: center;
     justify-content: center;
 }
-main .menu .box-container .box{
+.box{
     padding: 5rem;
     text-align: center;
     border: var(--border);
@@ -251,15 +251,109 @@ main .menu .box-container .box h3{
     padding: .1rem 0;
     transition: all 500ms ease-in-out;
 }
-main .menu .box-container .box .price{
+.box .price{
     color: var(--white);
     font-size: 2rem;
     padding: .5rem 0;
     transition: all 500ms ease-in-out;
 }
-main .menu .box-container .box .price span{
+.box .price span{
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
     transition: all 500ms ease-in-out;
+}
+main .products{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .products .coffee-product{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .products .coffee-product .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 8.5rem;
+    
+}
+main .products .coffee-product .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    padding: .1rem 0;
+}
+main .products .coffee-product .box .stars{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+main .products .coffee-product .box .icons{
+    gap: 1.7rem;
+    display: flex;
+    color: var(--white);
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+}
+main .products .coffee-product .box2{
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    padding: .8rem .8rem;
+    text-align: center;
+    border: var(--border);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+main .products .coffee-product .box2:hover{
+    color: var(--main-color);
+}
+main .blogs .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+main .blogs .box-container .box-blogs{
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    gap: 2rem;
+    padding-bottom: 2rem;
+    max-width: 28rem;
+}
+
+main .blogs .box-container .box-blogs div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 1.5rem;
+}
+main .blogs .box-container .box-blogs h3{
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 0.1rem 0;
+    font-weight: 370;
+}
+main .blogs .box-container .box-blogs h4{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 370;
+}
+main .blogs .box-container .box-blogs p{
+    color: var(--parrafo);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+main .blogs .box-container .box-blogs a{
+    max-width: 11rem;
+    max-height: 4rem;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.3rem;
 }
