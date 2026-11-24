@@ -453,3 +453,8 @@ footer .credit{
 footer .credit span{
     color: var(--main-color);
 }
+@media (max-width:991px){
+    html{
+        font-size: 12px;
+    }
+}
