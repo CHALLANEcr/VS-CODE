@@ -457,6 +457,9 @@ footer .credit span{
     html{
         font-size: 12px;
     }
+    header .search-form{
+        width: 29rem;
+    }
     header .icons #menu-btn{
         display: inline-block;
     }

@@ -93,11 +93,24 @@ body{
     #inicio #navegacion a i{
         font-size: 38px;
     }
-
-    #inicio #navegacion nav{
-        display: none;
+    .op_menu{
+        color: #000;
     }
-
+    #inicio #navegacion nav{
+        border-radius: 0 30px 30px 0;
+        height: 80vh;
+        gap: 60px;
+        flex-direction: column;
+        position: absolute;
+        top: 13%;
+        background: rgb(244, 246, 245);
+        /* left: -100%; */
+        z-index: 10;
+        left: -100%;
+    }
+    #inicio #navegacion nav.active{
+        left: 0;
+    }
     .hamburger{
         display: flex;
         align-items: center;
