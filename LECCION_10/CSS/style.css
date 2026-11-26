@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 14px;
+}
+header{
+    width: 100vw;
+    height: 60vh;
+    background: url(../IMG/fondoHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    background: #0000003a;
+    align-items: center;
+    justify-content: center;
+    gap: 6.8rem;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+header nav .logo img{
+    width: 3rem;
+}
+header nav .navbar{
+    gap: 6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header nav .navbar a{
+    padding: 0 1rem;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+}
+header nav .navbar a:hover{
+    color: #FF4930;
+}
+header nav .icons{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header nav .icons i{
+    cursor: pointer;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+}
+header nav .icons i:hover{
+    color: #FF4930;
+}
+.styleBTN{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    background-color: #FF4930;
+    border-radius: 2rem;
+    transition: all 500ms ease-in-out;
+}
+.styleBTN:hover{
+    box-shadow: 0 4px 14px 6px rgba(0, 0, 0, 0.25);
+}
+header h1{
+    display: flex;
+    font-weight: bolder;
+    font-size: 5rem;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 100vw;
+}
+main #about{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 6rem 13rem;
+}
+main #about .aboutBTN{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #FFF;
+    box-shadow: 0 4px 14px 6px rgba(0, 0, 0, 0.25);
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+}
+main #about .aboutBTN i{
+    color: #FF4930;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+main #about .introduction{
+    width: 100%;
+    display: flex;
+}
+main #about .introduction h2{
+    font-size: 4rem;
+}
+main #about .introduction h2 span{
+    color: #f25a23;
+}
+main #about .text-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+main #about .introduction p{
+    display: flex;
+    width: 25%;
+    padding: 4rem 1.5rem 0 1.5rem;
+    font-size: 1.2rem;
+    color: gray;
+}
+main #about .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+main #about .cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+main #about .cards .card:hover i{
+    background-color: black;
+}
+main #about .cards .card i{
+    color: #fff;
+    background-color: #FF4930;
+    padding: 1.1rem 1rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    width: fit-content;
+    height: fit-content;
+    transition: all 500ms ease-in-out;
+}
+main #about .cards .card div h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+main #about .cards .card div p{
+    font-size: 1.2rem;
+    color: grey;
+}
+main .imgs{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 0 13rem 6rem 13rem;
+}
+main .imgs #img1{
+    width: 60rem;
+    height: 35rem;
+    border-radius: 2rem;
+}
+main .imgs .imgBox{
+    position: absolute;
+    width: 40rem;
+    height: 26rem;
+    background: url(../IMG/mainIMG2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    z-index: 2;
+    border: 0.5rem solid white;
+    right: 13rem;
+    top: 4.9rem;
+}
+main .imgs .imgBox img{
+    width: 20rem;
+    height: 10rem;
+}
+main .imgs .imgBox i{
+    color: #FFF;
+    font-size: 1.8rem;
+    background-color: #FF4930;
+    padding: 1.6rem 1.6rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .members{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    padding: 6rem 13rem;
+    justify-content: center;
+    gap: 4rem;
+}
+main .members h2{
+    font-size: 4rem;
+}
+main .members span{
+    color: #f25a23;
+}
+main .members p{
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+main .members #textos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0 22rem 3rem 22rem;
+}
+main .members .membersCARDS{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main .members .membersCARDS .memberCard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+main .members .membersCARDS .memberCard img{
+    width: 15rem;
+    height: 20rem;
+}
+main .members .membersCARDS .memberCard .memberBTN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #FF4930;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+}
+
+main .members .membersCARDS .memberCard h3{
+    font-size: 2rem;
+    color: #fff;
+}
+main .members .membersCARDS .memberCard p{
+    color: #d8d8d8;
+}
+main .members h3{
+    text-align: center;
+
+}
